@@ -20,11 +20,8 @@ public class Main{
             }
         }
 
-        for(int i=0; i < celdas; i++){
-            System.out.print("["+arreglo[i]+"] ");
-        }
-
-       media(arreglo,celdas); 
+        imprimir(arreglo,celdas);
+        media(arreglo,celdas); 
     }
     
     public static void media(int a[], int n){
@@ -39,4 +36,10 @@ public class Main{
         System.out.println("La media es: "+media);
     }
     
+    public static void imprimir(int a[], int c){
+        for(int i=0; i < c; i++){
+            System.out.print("["+a[i]+"] ");
+        }
+        System.out.println();
+    }
 }
