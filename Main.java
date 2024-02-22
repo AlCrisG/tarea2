@@ -23,5 +23,20 @@ public class Main{
         for(int i=0; i < celdas; i++){
             System.out.print("["+arreglo[i]+"] ");
         }
+
+       media(arreglo,celdas); 
     }
+    
+    public static void media(int a[], int n){
+        float media;
+        if(n%2==0){
+                n=n/2;
+                media = (a[n-1]+a[n])/2f;
+        }else{
+            n=n/2;
+            media = a[n];
+        }
+        System.out.println("La media es: "+media);
+    }
+    
 }
